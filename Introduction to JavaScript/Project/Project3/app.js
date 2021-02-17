@@ -1,29 +1,25 @@
-console.log( 1 == 1 )
-console.log( 2 == 2 )
-console.log( 3 == 3 )
-console.log( 4 == "4") // ไม่สนใจ type  เหมือนกันไหม
-console.log( 5 == 6 )
-console.log( 4 === "4") //เช็คค่า type เดียวกัน เหมือนกันไหม
- 
-console.log("Hello" != "Hello")
-console.log("hello" != "Hello")
-console.log("4" != 4)
-console.log("4" !== 4)
+let lotto_number = prompt("กรอกเลขที่ต้องการซื้้อ :")
+let random_number = Math.floor(Math.random() * 1000)
+document.getElementById("random").innerHTML = random_number
+if (lotto_number == random_number) {
+    // console.log("โชคดีด้วยคุณถูกรางวัล!!!");
+    document.getElementById("result").innerHTML = "ยินดีด้วยคุณถูกรางวัล เลขท้าย 3 ตัว"
+}
+else{
+    document.getElementById("result").innerHTML = "เสียใจด้วยคุณไม่ถูกรางวัล เลขท้าย 3 ตัว"
 
-console.log(10 > 50)
-console.log(5 < 10)
-console.log(10 <= 10)
-console.log(10 >= 10)
+}
 
+// if จะทำงานก็ตัวเมื่อเข้าเงื่อนไข ถ้าไม้เข้าเงื่อนไขมันจะข้ามไปเลย หรือถ้าเช้าเงื่อนไชใดแล้ว เงื่อนไขตัวถัดไปจะข้ามไปเลย 
+// else if
 
-// let lotto_number = prompt("กรอกเลขที่ต้องการซื้้อ :")
 // console.log(lotto_number);
 // console.log(Math.floor(Math.random() * 100))
 // document.getElementById("buy_lotto").innerHTML = lotto_number
-//ส่งค่า ไปที่ index.html 
+// ส่งค่า ไปที่ index.html 
 
-// document.getElementById("result").innerHTML = (Math.floor(Math.random() * 100))
-//ส่งค่า ไปที่ index.html 
+
+// ส่งค่า ไปที่ index.html 
 
 
 //  var name = prompt("กรอกชื่ิอสิจ๊ะ")
