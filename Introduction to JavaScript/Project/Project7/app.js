@@ -29,6 +29,8 @@ for (var i = 1; i <= round ; i++) {
       document.getElementById("result").innerHTML = "คะแนนรวม " + sum_answer + " คะแนน"
 
 
+      //for วนซ้ำที่แน่นอน while วนซ้ำที่ไม่แน่นอน
+
 // let round = prompt ("คุณจะเล่นทั้งหมดกี่รอบ")
 // for (var i = 0; i < round ; i++) {
 //       var answer = prompt("หัว หรือ ก้อย พิมพ์มาเลย !") 
