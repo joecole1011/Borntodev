@@ -1,27 +1,23 @@
 function toVat7(price) 
 {
-   let value =  price * ( 7 / 100)
-   return value.toFixed(2) + "บาท" //แปลงจุดทศนิยม 
+   let value =  (price *  7) / 100
+   return value.toFixed(2) + " บาท" 
 }
 
-function display(elemenId, value)
+function toVat9(price)
 {
-   document.getElementById(elemenId).innerHTML = "<i>" +  value + "</i>"
+   let value =  (price *  9) / 100
+   return value.toFixed(2) + " บาท" 
 }
 
-function toFahrenheit(celsius)
-{
-   let value = (celsius * 9) / 5 + 32
-   return value.toFixed(2) + " °F" //แปลงจุดทศนิยม 
-}
 function toVat7Program(value)
 {
     alert(toVat7(value))
 }
 
-function toFahrenheitProgram(value)
+function toVat9Program(value)
 {
-    alert(toFahrenheit(value))
+    alert(toVat9(value))
 }
 
 
