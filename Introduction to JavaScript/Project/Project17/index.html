@@ -33,8 +33,8 @@
   </head>
 
   <body>
-
     <div class="container">
+
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
@@ -46,55 +46,82 @@
         <h3 class="text-muted">Portfolio By Kimzun</h3>
       </div>
 
-      <div class="jumbotron">
+      <!-- <div class="jumbotron">
         <h1>Jumbotron heading</h1>
         <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         <p><a class="btn btn-info btn-success" href="#" role="button">Sign up today</a></p>
-      </div>
-
+      </div> -->
              
             <div class="row">
                 <div class="col-md-4">
                   <div class="thumbnail">
-                    <img src="..." alt="...">
                     <div class="caption">
-                      <h3>Thumbnail label</h3>
-                      <p>...</p>
-                      <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                      <h3>โปรแกรมคิดคำนวณส่วนลด</h3>
+                      <p>วิธีคำนวณ ป้ายลดเปอร์เซ็นต์เท่านี้ เราต้องจ่ายราคาจริงเท่าไร มีวิธีคิดเปอร์เซ็นต์ หรือ ร้อยละ ง่ายๆ มาฝาก 
+                      </p>
+                      <button type="button" class="btn btn-primary"
+                      onclick="discount(document.getElementById())">คำนวณ</button>
+                      <a class="btn btn-info btn-success" href="index.html" role="button">เคลียร์ค่า</a>
                     </div>
                   </div>                  
                 </div>
-
                 <div class="col-md-4">
                     <div class="thumbnail">
-                      <img src="..." alt="...">
                       <div class="caption">
                         <h3>Thumbnail label</h3>
                         <p>...</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                        <a href="#" class="btn btn-success" role="button">Button</a>
+                        <a class="btn btn-info btn-success" href="index.html" role="button">เคลียร์ค่าต่างๆ</a>
                       </div>
                     </div>                  
                   </div>
-
                   <div class="col-md-4">
                     <div class="thumbnail">
-                      <img src="..." alt="...">
                       <div class="caption">
                         <h3>Thumbnail label</h3>
                         <p>...</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                        <a href="#" class="btn btn-warning" role="button">Button</a>
+                        <a class="btn btn-info btn-success" href="index.html" role="button">เคลียร์ค่าต่างๆ</a>
                       </div>
                     </div>                  
                   </div>
-              </div>    
-      <footer class="footer">
-        <p>&copy; 2016 Company, Inc.</p>
-      </footer>
+              </div>
+              
+              <div class="jumbotron">
+                <h1>Jumbotron heading</h1>
+                <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn btn-info btn-success" href="index.html" role="button">เคลียร์ค่าต่างๆ</a></p>
+              </div>
 
+            <!-- <h3>โปรแกรมแปลงหน่วย  </h3>
+
+                <input id= "inputValue" type="text">
+                
+                <button onclick="toCelsiusProgram(document.getElementById('inputValue').value)">แปลงเป็น Celsius</button>
+                <button onclick="toFahrenheitProgram(document.getElementById('inputValue').value)">แปลงเป็น Fahrenheit</button>
+                <br> <br> -->
+
+            <!-- <h3>โปรแกรมคำนวณค่าอาหาร</h3>
+                <h1 id="result"></h1>  
+                <div id="price-list"></div>  
+                <div id="sum"></div>   -->
+
+            <h3>โปรแกรมคำนวณส่วนลด</h3>
+                <div id="price-list"></div>  <!-- ราคาต่อชิ้น -->                
+                <h2 id="per"></h2>  <!-- ลดไป เปอร์เซ็นต์-->
+                <h2 id="per-dis"></h2>  <!-- ลดไป บาท-->
+                <h2 id="result"></h2>  <!-- ราคารวม -->
+                <h1 id="totalPer"></h1>  <!-- ราคาที่คิดส่วนลดแล้ว -->
+
+      <footer class="footer">
+        <p>&copy; 2021 Kimzun </p>
+      </footer>
     </div> <!-- /container -->  
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- <script src="app.js"></script> -->
+    <script src="css.js"></script>
   </body>
 </html>
 
