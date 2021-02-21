@@ -1,54 +1,44 @@
 function toVat7(price) 
 {
-   let value =  (price *  7) / 100
-   return value.toFixed(2) + " บาท" 
+      
+      let value =  (price *  7) / 100
+      
+      document.getElementById("price").innerHTML = "ราคาก่อนคิดภาษีมุลค่าเพิ่ม 7% " + " : " + price + " บาท"
+      document.getElementById("vat").innerHTML = "ภาษีมูลค่าเพิ่ม 7% " + " : " + value + " บาท"
+      
+      total = parseInt(price) + parseInt(value)
+
+      // console.log(total)
+
+      document.getElementById("totalSum").innerHTML = "ราคารวมภาษีมูลค่าเพิ่ม 7% " + " : " + total.toFixed(2) + " บาท"
+
+      return "ภาษีมูลค่าเพิ่ม 7% : " +  value.toFixed(2) + " บาท" 
+      
+      
 }
 
 function toVat9(price)
 {
-   let value =  (price *  9) / 100
-   return value.toFixed(2) + " บาท" 
+      let value =  (price *  9) / 100
+      
+      document.getElementById("price").innerHTML = "ราคาก่อนคิดภาษีมุลค่าเพิ่ม 9% " + " : " + price + " บาท"
+      document.getElementById("vat").innerHTML = "ภาษีมูลค่าเพิ่ม 9% " + " : " + value + " บาท"
+      
+      total = parseInt(price) + parseInt(value)
+
+      // console.log(total)
+
+      document.getElementById("totalSum").innerHTML = "ราคารวมภาษีมูลค่าเพิ่ม 9% " + " : " + total.toFixed(2) + " บาท"
+
+      return "ภาษีมูลค่าเพิ่ม 9% : " +  value.toFixed(2) + " บาท"  
 }
 
 function toVat7Program(value)
 {
-    alert(toVat7(value))
+      alert(toVat7(value))
 }
 
 function toVat9Program(value)
 {
-    alert(toVat9(value))
+      alert(toVat9(value))
 }
-
-
-
-
-
-
-
-
-// function toCelsius(fahrenheit) 
-// {
-//    let value = (fahrenheit - 32) * 5 / 9
-//    return value.toFixed(2) + " °C" //แปลงจุดทศนิยม 
-// }
-
-// function display(elemenId, value)
-// {
-//    document.getElementById(elemenId).innerHTML = "<i>" +  value + "</i>"
-// }
-
-// function toFahrenheit(celsius)
-// {
-//    let value = (celsius * 9) / 5 + 32
-//    return value.toFixed(2) + " °F" //แปลงจุดทศนิยม 
-// }
-// function toCelsiusProgram(value)
-// {
-//     alert(toCelsius(value))
-// }
-
-// function toFahrenheitProgram(value)
-// {
-//     alert(toFahrenheit(value))
-// }

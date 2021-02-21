@@ -55,7 +55,11 @@
             <button onclick="toVat9Program(document.getElementById('inputValue').value)">ภาษี 9%</button>
           
             <br><br>
-            <a href="vat.html" class="btn btn-success" role="button">คำนวณใหม่/เครียร์ค่า</a>
+            <h2 id="price"></h2>  <!-- ราคาก่อนคิดภาษี --> 
+            <h2 id="vat"></h2>  <!-- ภาษีมูลค่าเพิ่ม -->
+            <h2 id="totalSum"></h2>  <!-- ราคารวมภาษีมูลค่าเพิ่ม -->  
+            <br><br>
+            <a href="vat.html" class="btn btn-success" role="button">เครียร์ค่า</a>
             <a href="index.html" class="btn btn-warning" role="button">กลับหน้าแรก</a>
         </p>
       </div>
