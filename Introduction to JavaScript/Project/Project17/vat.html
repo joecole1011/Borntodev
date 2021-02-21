@@ -47,12 +47,16 @@
       </div>
 
       <div class="jumbotron">
-        <h1>โปรแกรมคำนวณภาษี</h1>
-        <p class="lead">            
-            
+        <h1>โปรแกรมคำนวณภาษีมูลค่าเพิ่ม</h1>
+        <p class="lead">
+            <br>
+            <input id= "inputValue" type="text" placeholder="ราคาสินค้าก่อนคิดภาษี">
+            <button onclick="toCelsiusProgram(document.getElementById('inputValue').value)">ภาษี 7%</button>
+            <button onclick="toFahrenheitProgram(document.getElementById('inputValue').value)">ภาษี 9%</button>
+          
             <br><br>
             <a href="vat.html" class="btn btn-success" role="button">คำนวณใหม่/เครียร์ค่า</a>
-            <a href="in1dex.html" class="btn btn-warning" role="button">กลับหน้าแรก</a>
+            <a href="index.html" class="btn btn-warning" role="button">กลับหน้าแรก</a>
         </p>
       </div>
       <footer class="footer">
@@ -62,7 +66,7 @@
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-    <!-- <script src="vat.js"></script> -->
+    <script src="vat.js"></script>
   </body>
 </html>
 

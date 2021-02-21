@@ -11,12 +11,12 @@
           // document.getElementById("result").innerHTML = "ราคารวม " + sum + " บาท"
     }
        document.getElementById("result").innerHTML = "ราคารวม " + sum + " บาท"
-
+    
        let per = prompt("ใส่เปอร์เซ็นต์ส่วนลด")
        document.getElementById("per").innerHTML = "ลดไป " + per + " เปอร์เซ็น"
 
        disper = (sum * per) / 100
-       document.getElementById("per-dis").innerHTML = "ส่วนลดที่ได้ " + disper + " บาท"
+       document.getElementById("per-dis").innerHTML = "ส่วนลดที่ได้ " + disper.toFixed(2) + " บาท"
 
        total = sum - disper 
-       document.getElementById("totalPer").innerHTML = "ราคาเมื่อคิดส่วนลดแล้ว " + total + " บาท" 
+       document.getElementById("totalPer").innerHTML = "ราคาเมื่อคิดส่วนลดแล้ว " + total.toFixed(2) + " บาท" 

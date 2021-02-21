@@ -1,22 +1,58 @@
-    let qrt = prompt("ใส่จำนวนสินค้า")
-    let sum = 0
-    let disper = 0
-    let total = 0
-    for(var i = 1 ; i <= qrt ; i++){
- 
-          let item_price = prompt("ราคาสินค้าชิ้นที่" + i)
-          sum = sum + parseInt(item_price)
-          // document.getElementById("price-list").innerHTML += item_price // เพิ่มบรรทัดลงไปเรื่อยๆ <br>
-          document.getElementById("price-list").innerHTML += "รายการสินค้าชิ้นที่ " + i + " : " + item_price + " บาท" + "<br>"
-          // document.getElementById("result").innerHTML = "ราคารวม " + sum + " บาท"
-    }
-       document.getElementById("result").innerHTML = "ราคารวม " + sum + " บาท"
+function toVat7(price) 
+{
+   let value =  price * ( 7 / 100)
+   return value.toFixed(2) + "บาท" //แปลงจุดทศนิยม 
+}
 
-       let per = prompt("ใส่เปอร์เซ็นต์ส่วนลด")
-       document.getElementById("per").innerHTML = "ลดไป " + per + " เปอร์เซ็น"
+function display(elemenId, value)
+{
+   document.getElementById(elemenId).innerHTML = "<i>" +  value + "</i>"
+}
 
-       disper = (sum * per) / 100
-       document.getElementById("per-dis").innerHTML = "ส่วนลดที่ได้ " + disper + " บาท"
+function toFahrenheit(celsius)
+{
+   let value = (celsius * 9) / 5 + 32
+   return value.toFixed(2) + " °F" //แปลงจุดทศนิยม 
+}
+function toVat7Program(value)
+{
+    alert(toVat7(value))
+}
 
-       total = sum - disper 
-       document.getElementById("totalPer").innerHTML = "ราคาเมื่อคิดส่วนลดแล้ว " + total + " บาท" 
+function toFahrenheitProgram(value)
+{
+    alert(toFahrenheit(value))
+}
+
+
+
+
+
+
+
+
+// function toCelsius(fahrenheit) 
+// {
+//    let value = (fahrenheit - 32) * 5 / 9
+//    return value.toFixed(2) + " °C" //แปลงจุดทศนิยม 
+// }
+
+// function display(elemenId, value)
+// {
+//    document.getElementById(elemenId).innerHTML = "<i>" +  value + "</i>"
+// }
+
+// function toFahrenheit(celsius)
+// {
+//    let value = (celsius * 9) / 5 + 32
+//    return value.toFixed(2) + " °F" //แปลงจุดทศนิยม 
+// }
+// function toCelsiusProgram(value)
+// {
+//     alert(toCelsius(value))
+// }
+
+// function toFahrenheitProgram(value)
+// {
+//     alert(toFahrenheit(value))
+// }
