@@ -10,7 +10,7 @@ function toVat7(price)
 
       // console.log(total)
 
-      document.getElementById("totalSum").innerHTML = "ราคารวมภาษีมูลค่าเพิ่ม 7% " + " : " + total.toFixed(2) + " บาท"
+      document.getElementById("totalSum").innerHTML = "ราคารวมภาษีมูลค่าเพิ่ม 7% " + " : " + total + " บาท"
 
       return "ภาษีมูลค่าเพิ่ม 7% : " +  value.toFixed(2) + " บาท" 
       
@@ -28,9 +28,9 @@ function toVat9(price)
 
       // console.log(total)
 
-      document.getElementById("totalSum").innerHTML = "ราคารวมภาษีมูลค่าเพิ่ม 9% " + " : " + total.toFixed(2) + " บาท"
+      document.getElementById("totalSum").innerHTML = "ราคารวมภาษีมูลค่าเพิ่ม 9% " + " : " + total + " บาท"
 
-      return "ภาษีมูลค่าเพิ่ม 9% : " +  value.toFixed(2) + " บาท"  
+      return "ภาษีมูลค่าเพิ่ม 9% : " +  value + " บาท"  
 }
 
 function toVat7Program(value)
